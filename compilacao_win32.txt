@@ -1,0 +1,8 @@
+; Compilando para windows, 32 bits:
+nasm -f win32 switch_example.asm -o objects\switch.obj
+
+; Compilando para windows, 64 bits:
+nasm -f win64 switch_example.asm -o objects\switch.obj
+
+; Gerando o executavel com o gcc
+gcc objects\switch.obj -o switch_example.exe
